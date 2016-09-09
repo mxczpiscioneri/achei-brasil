@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="br.com.mxczpiscioneri.acheibrasil.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/header"
+            android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cidade"
+                android:textColor="@color/colorDefault"
+                android:textSize="24sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteCidades"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/escolha_cidades"
+                android:inputType="textFilter|textNoSuggestions"
+                android:padding="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/categoria"
+                android:textColor="@color/colorDefault"
+                android:textSize="24sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteCategorias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/escolha_categorias"
+                android:inputType="textFilter|textNoSuggestions"
+                android:padding="16dp" />
+
+            <Button
+                android:id="@+id/btnEstabelecimentos"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="32dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/proximo"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="br.com.mxczpiscioneri.acheibrasil.DetalhesActivity"
+    tools:showIn="@layout/activity_detalhes">
+
+    <LinearLayout
+        android:id="@+id/llGeral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPageAndroid"
+            android:layout_width="match_parent"
+            android:layout_height="180dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <LinearLayout
+                style="@style/detalhes_grupo"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:id="@+id/nome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorDefault"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/categoria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorDefault"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llContato"
+                style="@style/detalhes_grupo"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/detalhes_grupo_titulo"
+                    android:drawableLeft="@drawable/icon_contacts"
+                    android:text="@string/contato" />
+
+                <TextView
+                    android:id="@+id/telefone"
+                    style="@style/detalhes_grupo_texto"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/celular"
+                    style="@style/detalhes_grupo_texto"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/whatsapp"
+                    style="@style/detalhes_grupo_texto"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/email"
+                    style="@style/detalhes_grupo_texto"
+                    android:autoLink="email"
+                    android:textColor="@color/colorDefault"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llEndereco"
+                style="@style/detalhes_grupo"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/detalhes_grupo_titulo"
+                    android:drawableLeft="@drawable/icon_geo"
+                    android:text="@string/endereco" />
+
+                <TextView
+                    android:id="@+id/endereco"
+                    style="@style/detalhes_grupo_texto" />
+
+                <TextView
+                    android:id="@+id/complemento"
+                    style="@style/detalhes_grupo_texto"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/bairro"
+                    style="@style/detalhes_grupo_texto"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/cidade"
+                    style="@style/detalhes_grupo_texto" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llObservacao"
+                style="@style/detalhes_grupo"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/detalhes_grupo_titulo"
+                    android:drawableLeft="@drawable/icon_info"
+                    android:text="@string/informacoes" />
+
+                <TextView
+                    android:id="@+id/observacao"
+                    style="@style/detalhes_grupo_texto" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llPropagandas"
+                style="@style/detalhes_grupo"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/detalhes_grupo_titulo"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@drawable/icon_propaganda"
+                    android:text="@string/propagandas" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.android.volley.toolbox.NetworkImageView
+                        android:id="@+id/propaganda1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop" />
+
+                    <com.android.volley.toolbox.NetworkImageView
+                        android:id="@+id/propaganda2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/detalhes_grupo"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/website"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="openBrowser"
+                    android:src="@drawable/icon_domain"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/facebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="openBrowser"
+                    android:src="@drawable/icon_facebook"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/twitter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="openBrowser"
+                    android:src="@drawable/icon_twitter"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/instagram"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="openBrowser"
+                    android:src="@drawable/icon_instagram"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00a86e</color>
+    <color name="colorPrimaryDark">#00754D</color>
+    <color name="colorAccent">#888888</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorYellow">#FFDE29</color>
+    <color name="colorBlue">#052D48</color>
+    <color name="colorLightGray">#e4e4e4</color>
+    <color name="colorGray">#AAAAAA</color>
+    <color name="colorLight">#F0F0F0</color>
+    <color name="colorDefault">#555555</color>
+
+    <color name="facebook">#3b5998</color>
+    <color name="twitter">#55acee</color>
+    <color name="instagram">#125688</color>
+    <color name="site">#0072b1</color>
+</resources>

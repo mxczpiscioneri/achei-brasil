@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Achei Brasil</string>
+    <string name="analytics">UA-51289826-6</string>
+    <string name="maps">AIzaSyB-B8dKfJZcYcBJ2mmaXoeOihVXwILu4fw</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_inicio">Início</string>
+    <string name="nav_sorteio">Promoção</string>
+    <string name="nav_parceiro">Seja nosso Parceiro</string>
+    <string name="nav_link">Link</string>
+    <string name="nav_somos">Quem Somos</string>
+    <string name="nav_contato">Contate-nos</string>
+
+    <string name="cidade">Cidade</string>
+    <string name="categoria">Categoria</string>
+    <string name="escolha_cidades">Escolha a sua cidade</string>
+    <string name="escolha_categorias">Escolha a categoria</string>
+    <string name="proximo">Próximo</string>
+    <string name="erroCidade">Selecione uma cidade</string>
+    <string name="erroCategoria">Selecione uma categoria</string>
+
+    <string name="compartilhar">Compartilhar</string>
+    <string name="erro">Ocorreu um erro!</string>
+    <string name="carregando">Carregando...</string>
+    <string name="contato">Contato</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_estabelecimentos">Estabelecimentos</string>
+    <string name="title_activity_detalhes">Detalhes</string>
+    <string name="title_activity_sorteios">Sorteios</string>
+    <string name="title_activity_inscrever">Inscrever</string>
+    <string name="title_activity_sorteio">Sorteio</string>
+    <string name="title_activity_quem_somos">Quem Somos</string>
+    <string name="title_activity_contato">Contate-nos</string>>
+    <string name="title_activity_parceiro">Seja nosso Parceiro</string>
+    <string name="endereco">Endereço</string>
+    <string name="informacoes">Mais Informações</string>
+    <string name="propagandas">Propagandas</string>
+    <string name="novos">NOVOS</string>
+    <string name="encerrados">ENCERRADOS</string>
+    <string name="participar">Participar</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="quem_somos">Nascido da ideia de amigos <b>ACHEI BRASIL</b>, é uma empresa, e porque não dizer uma ferramenta, que visa destacar sua empresa no mundo digital.\n\nContando com um site e um aplicativo para smartphone, sua empresa estará sempre a mão de seu cliente, e de forma inovadora, proporcionando a inclusão digital, pois cuidamos também da imagem dos empresários informais que são milhões em nosso país.\n\n<b>ACHEI BRASIL</b>, ligando sua empresa quer seja formal ou informal ao seu cliente.</string>
+
+
+</resources>

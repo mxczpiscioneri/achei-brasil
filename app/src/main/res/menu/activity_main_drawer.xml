@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_inicio"
+            android:icon="@drawable/ic_inicio"
+            android:title="@string/nav_inicio" />
+        <item
+            android:id="@+id/nav_sorteio"
+            android:icon="@drawable/ic_sorteio"
+            android:title="@string/nav_sorteio" />
+        <item
+            android:id="@+id/nav_parceiro"
+            android:icon="@drawable/ic_vaga"
+            android:title="@string/nav_parceiro" />
+        <item
+            android:id="@+id/nav_somos"
+            android:icon="@drawable/ic_office"
+            android:title="@string/nav_somos" />
+        <item
+            android:id="@+id/nav_contato"
+            android:icon="@drawable/ic_contato"
+            android:title="@string/nav_contato" />
+    </group>
+
+</menu>
